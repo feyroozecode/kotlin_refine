@@ -18,4 +18,8 @@ fun main() {
     shape.draw()
   }
 
+  // car
+  val toy = ElectricCar("Toyota", "Corrola", 2018, 28)
+  print(toy.getDetails())
+
 }
