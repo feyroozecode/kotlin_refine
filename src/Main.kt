@@ -10,7 +10,12 @@ fun main() {
     // bank
     val bankAccount = BankAccount(balance = 120.5)
     bankAccount.deposit(25.0)
+    println("Balance = "+bankAccount.getBalance())
 
-    print("Balance = "+bankAccount.getBalance())
+   // shapes
+  val shapes: Array<Shape> = arrayOf(Circle(), Square())
+  for (shape in shapes){
+    shape.draw()
+  }
 
 }
