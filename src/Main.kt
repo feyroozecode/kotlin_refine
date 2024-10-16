@@ -8,7 +8,7 @@ fun main() {
     cat.makeSound()
 
     // bank
-    val bankAccount = BankAccount(balance = 120.5)
+    val bankAccount = BankAccount(balance = 120.5,"1234567890")
     bankAccount.deposit(25.0)
     println("Balance = "+bankAccount.getBalance())
 
@@ -22,4 +22,11 @@ fun main() {
   val toy = ElectricCar("Toyota", "Corrola", 2018, 28)
   print(toy.getDetails())
 
+
+    // bank
+    val accunt = BankAccount(500.0, "1B2B3456BN")
+    accunt.deposit(150.5)
+    accunt.withDraw(200.5, "1BC23NBC233")
+
+    println("Final balance ${accunt.getBalance()} ")
 }
